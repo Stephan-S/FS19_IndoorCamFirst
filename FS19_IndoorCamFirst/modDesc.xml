@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="42">
+    <author>Balu</author>
+	<title>
+		<en>IndoorCamFirst</en>
+		<de>Innenansicht-Standard</de>
+	</title>
+	<description>
+		<en>
+<![CDATA[Makes each vehicles default camera be the indoor camera
+]]>
+		</en>
+		<de>
+<![CDATA[Stellt die Innenansicht bei allen Fahrzeugen als Standard ein.
+]]>
+	   </de>
+	</description>
+	
+    <version>1.0.0.0</version>
+	
+	<multiplayer supported="true"/>  
+	
+	<iconFilename>store.dds</iconFilename>
+	
+    <extraSourceFiles>
+        <sourceFile filename="register.lua" />
+    </extraSourceFiles>	
+</modDesc>
+
