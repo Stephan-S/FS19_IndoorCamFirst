@@ -35,7 +35,7 @@ function IndoorCamFirst:init(vehicle)
 end;
 
 function IndoorCamFirst:onEnterVehicle()
-	if self.spec_enterable ~= nil then
+	if self.spec_enterable ~= nil and self.getIsEntered ~= nil and self:getIsEntered() then
 		if self.indoorCamFirst == nil then
 			IndoorCamFirst:init(self);
 		else
