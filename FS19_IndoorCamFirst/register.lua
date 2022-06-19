@@ -25,7 +25,7 @@ if g_specializationManager:getSpecializationByName("IndoorCamFirst") == nil then
 	if IndoorCamFirst == nil then 
 	  print("ERROR: unable to add specialization 'IndoorCamFirst'")
 	else 
-	  for i, typeDef in pairs(g_vehicleTypeManager.vehicleTypes) do
+	  for i, typeDef in pairs(g_vehicleTypeManager.types) do
 			if typeDef ~= nil then 
 				local isDrivable  = false
 				local isEnterable = false

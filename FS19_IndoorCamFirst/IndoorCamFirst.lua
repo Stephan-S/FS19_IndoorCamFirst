@@ -1,6 +1,6 @@
 IndoorCamFirst = {};
-IndoorCamFirst.Version = "1.0.0.1";
-local myName = "FS19_IndoorCamFirst";
+IndoorCamFirst.Version = "2.0.0.0";
+local myName = "FS22_IndoorCamFirst";
 
 IndoorCamFirst.directory = g_currentModDirectory;
 
@@ -35,7 +35,7 @@ function IndoorCamFirst:init(vehicle)
 end;
 
 function IndoorCamFirst:onEnterVehicle()
-	if self.spec_enterable ~= nil then
+	if self.spec_enterable ~= nil and self.getIsEntered ~= nil and self:getIsEntered() then
 		if self.indoorCamFirst == nil then
 			IndoorCamFirst:init(self);
 		else
